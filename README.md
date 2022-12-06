@@ -58,16 +58,15 @@ The current dataset consists of data from international figure skating competiti
 - baseValue: the numerical base value awarded for the component (this is multiplied by the factor for the total component score)
 - factor: the numerical scaling applied to the component (this is multiplied by the baseValue for the total component score)
 
-### jumps+info
+### jumps
 
 [DOWNLOAD LINK]()
 
-- code: the code for the jump element or info note
-- element: the name for the jump element or info note
-- type: whether it is a Jump or Info row
-- baseValue: the base value awarded for the jump or the adjustment made for the info note
+- code: the code for the jump element
+- element: the name for the jump element
+- baseValue: the base value awarded for the jump
 
-### spins+steps
+### spins_steps
 
 [DOWNLOAD LINK]()
 
