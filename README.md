@@ -146,4 +146,4 @@ Each challenge is worth a different number of points (equal to the challenge num
 
 ## Challenge 4 - 4 Points
 
-## Challenge 5 - 6 Points
+## Challenge 5 - 5 Points
