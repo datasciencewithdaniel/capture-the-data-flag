@@ -168,7 +168,7 @@ In the 2021/22 Season there are 2 events in data. **For this season, which `nati
 
 ## Challenge 8 - 8 Points
 
-In the 2022 Olympic Winter Games, there was controversy surrounding the scoring of skaters due to the empahsis put on the component scores in comparision to the technical difficulty captured in the element scores. **If the 2022 Olympic Winter Games was only based on the technical scores in the elements data, would the resuling medals have been any different?** This answer should be YES or NO, and if YES, then it should include the name of the three skaters who would have been awarded the gold, silver, and bronze medals in the adjusted order.
+In the 2022 Olympic Winter Games, there was controversy surrounding the scoring of skaters due to the emphasis put on the component scores in comparison to the technical difficulty captured in the element scores. **If the 2022 Olympic Winter Games was only based on the technical scores in the elements data, would the resulting medals have been any different?** This answer should be YES or NO, and if YES, then it should include the name of the three skaters who would have been awarded the gold, silver, and bronze medals in the adjusted order.
 
 ## Challenge 9 - 9 Points
 
@@ -180,3 +180,7 @@ The component scores can be adjusted in the `factor` that is applied as there is
 - Women's Free Program: 1.60
 
 What would happen if the women's competitions had the same component factors as the men? **Which female skaters would have received a medal in place of a male skater with the 1.00/2.00 factors in the same competition?** This answer should be a list of skaters names, or no names if no female skater would have achieved this.
+
+## Challenge 10 - 10 Points
+
+Recall from Challenge 5 where we found the most popular jump and the most popular spin. In that challenge we treated a combination jump as its own individual jump, when in reality it is a composition of multiple jumps as specified above in the data dictionary. Repeat Challenge 5 where each individual jump within a combination jump is split out on its own to identify what is the true most popular jump (and spin but this result should not change.) **What is the most popular Jump element, and what is the most popular Spin element?** This answer should be the name of the element that can be found in the Jumps data and the Spins_Steps data respectively.
