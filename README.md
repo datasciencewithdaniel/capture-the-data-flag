@@ -165,3 +165,18 @@ To find out the results of a competition, the elements scores (the sum of the `b
 ## Challenge 7 - 7 Points
 
 In the 2021/22 Season there are 2 events in data. **For this season, which `nationality` received the most medals and how many medals did they win?** This answer should be a three-digit `nationality` code as well as an integer for the number of medals. Hint: this will be easier to discover if Challenge 5 has been completed.
+
+## Challenge 8 - 8 Points
+
+In the 2022 Olympic Winter Games, there was controversy surrounding the scoring of skaters due to the empahsis put on the component scores in comparision to the technical difficulty captured in the element scores. This can be adjusted in the `factor` that is applied to the component scores as there is currently different factors for male and female skaters, as well as between the Short Program (SP) and the Free Program (FP). Currently the factors are:
+
+- Men's Short Program: 1.00
+- Men's Free Program: 2.00
+- Women's Short Program: 0.80
+- Women's Free Program: 1.60
+
+**If the 2022 Olympic Winter Games was only based on the technical scores in the elements data, would the resuling medals have been any different?** This answer should be YES or NO, and if YES, then it should include the name of the three skaters who would have been awarded the gold, silver, and bronze medals in the adjusted order.
+
+## Challenge 9 - 9 Points
+
+Looking at the above information for Challenge 8, what would happen if the women's competitions had the same component factors as the men? **Which female skaters would have received a medal in place of a male skater with the 1.00/2.00 factors in the same competition?** This answer should be a list of skaters names, or no names if no female skater would have achieved this.
