@@ -140,7 +140,11 @@ Each challenge is worth a different number of points (equal to the challenge num
 
 ## Challenge 1 - 1 Point
 
+The Components of a program are five elements that the judges rate the skaters on up to a maximum of 10. This means that the best component score a skater can achieve is 50.00. This component score is then reduced by any deductions that the skater incurs. Using this component score as a proxy for how well the judges felt the program went, without factoring in any of the specifc elements, **what is the top component score achieved by a skater?** To be able to compare across the Short Program (SP) and Free Program (FP) as well as between genders, ignore the `factor` column and simply use the `baseValue` as the raw component score. This answer should be a decimal number between 0.00 and 50.00 to 2 decimal places.
+
 ## Challenge 2 - 2 Points
+
+Deductions can be found in the components of a program and are negative values that decrease the score a skater recieves. These are most often for falls but can also be for other infractions that are noted in the data dictionary above. **What is the most amount of deductions a skater has recieved in a single skate?** This answer should be an integer number greater than 0.
 
 ## Challenge 3 - 3 Points
 
