@@ -148,8 +148,10 @@ Deductions can be found in the components of a program and are negative values t
 
 ## Challenge 3 - 3 Points
 
-In order to compete at the competitions in this dataset such as the World Champtionships and the Grand Prix Final, skaters have to qualify at other events and be invited. **Which event has the greatest number of skaters from a single nationality?** This answer should be a `year`, a `competition`, a `nationality`, and an integer for the number of skaters.
+In order to compete at the competitions in this dataset such as the World Champtionships and the Grand Prix Final, skaters have to qualify at other events and be invited. **Which event has the greatest number of skaters from a single nationality?** This answer should be a `year`, a `competition`, a `nationality`, and an integer for the number of skaters associated with that event.
 
 ## Challenge 4 - 4 Points
+
+Each element has a different code that is recorded as explained above. **What is the most popular Jump element, and what is the most popular Spin element?** This answer should be the name of the element that can be found in the `Jumps` data and the `Spins_Steps` data respectively. For the purpose of this challenge, combination jumps are treated as their own jump instead of a combination of 2-3 individual jumps, as well as the level of the spin will be ignored (the trailing number).
 
 ## Challenge 5 - 5 Points
