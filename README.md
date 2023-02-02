@@ -160,4 +160,4 @@ To find out the results of a competition, the elements scores (the sum of the `b
 
 ## Challenge 6 - 6 Points
 
-In the 2021/22 Season there are 2 events in data. **For this season, which `nationality` received the most medals and how many medals did they win?** This answer should be a three-digit `nationality` code as well as an integer for the number of medals.
+In the 2021/22 Season there are 2 events in data. **For this season, which `nationality` received the most medals and how many medals did they win?** This answer should be a three-digit `nationality` code as well as an integer for the number of medals. Hint: this will be easier to discover if Challenge 5 has been completed.
