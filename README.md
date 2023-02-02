@@ -148,16 +148,20 @@ Deductions can be found in the components of a program and are negative values t
 
 ## Challenge 3 - 3 Points
 
-In order to compete at the competitions in this dataset such as the World Championships and the Grand Prix Final, skaters have to qualify at other events and be invited. **Which event has the greatest number of skaters from a single nationality?** This answer should be a `year`, a `competition`, a three-digit `nationality` code, and an integer for the number of skaters associated with that event.
+Only selected events have been included in this dataset. **Which event is included in the list of events but does not have any associated data on the results?** This answer should be a competition name and the respective year.
 
 ## Challenge 4 - 4 Points
 
-Each element has a different code that is recorded as explained above. **What is the most popular Jump element, and what is the most popular Spin element?** This answer should be the name of the element that can be found in the `Jumps` data and the `Spins_Steps` data respectively. For the purpose of this challenge, combination jumps are treated as their own jump instead of a combination of 2-3 individual jumps, as well as the level of the spin will be ignored (the trailing number).
+In order to compete at the competitions in this dataset such as the World Championships and the Grand Prix Final, skaters have to qualify at other events and be invited. **Which event has the greatest number of skaters from a single nationality?** This answer should be a `year`, a `competition`, a three-digit `nationality` code, and an integer for the number of skaters associated with that event.
 
 ## Challenge 5 - 5 Points
 
-To find out the results of a competition, the elements scores (the sum of the `baseValue` and the `goe`) are added to the component scores (the `baseValue` multiplied by the `factor`). These are then summed across both the Short Program (SP) and the Free Program (FP) for each skater in a competition. The medals are then awarded to the top three skaters with gold, silver, and bronze respectively. **In the recent 2022 Olympic Winter Games, who took the gold medal in the men's event, and who took the gold medal in the women's event, and what were each of their scores?** This answer should be two names, on of each of the gold medalists, and two scores, which are numbers to two decimal places.
+Each element has a different code that is recorded as explained above. **What is the most popular Jump element, and what is the most popular Spin element?** This answer should be the name of the element that can be found in the `Jumps` data and the `Spins_Steps` data respectively. For the purpose of this challenge, combination jumps are treated as their own jump instead of a combination of 2-3 individual jumps, as well as the level of the spin will be ignored (the trailing number).
 
 ## Challenge 6 - 6 Points
+
+To find out the results of a competition, the elements scores (the sum of the `baseValue` and the `goe`) are added to the component scores (the `baseValue` multiplied by the `factor`). These are then summed across both the Short Program (SP) and the Free Program (FP) for each skater in a competition. The medals are then awarded to the top three skaters with gold, silver, and bronze respectively. **In the recent 2022 Olympic Winter Games, who took the gold medal in the men's event, and who took the gold medal in the women's event, and what were each of their scores?** This answer should be two names, on of each of the gold medalists, and two scores, which are numbers to two decimal places.
+
+## Challenge 7 - 7 Points
 
 In the 2021/22 Season there are 2 events in data. **For this season, which `nationality` received the most medals and how many medals did they win?** This answer should be a three-digit `nationality` code as well as an integer for the number of medals. Hint: this will be easier to discover if Challenge 5 has been completed.
