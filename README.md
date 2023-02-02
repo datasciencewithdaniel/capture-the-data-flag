@@ -148,6 +148,8 @@ Deductions can be found in the components of a program and are negative values t
 
 ## Challenge 3 - 3 Points
 
+In order to compete at the competitions in this dataset such as the World Champtionships and the Grand Prix Final, skaters have to qualify at other events and be invited. **Which event has the greatest number of skaters from a single nationality?** This answer should be a `year`, a `competition`, a `nationality`, and an integer for the number of skaters.
+
 ## Challenge 4 - 4 Points
 
 ## Challenge 5 - 5 Points
