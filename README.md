@@ -29,14 +29,14 @@ The skaters data is a list of every individual skater that is found in the data 
 
 [DOWNLOAD LINK](https://capture-the-data-flag.s3.ap-southeast-2.amazonaws.com/Events.csv)
 
-THe events data shows which events are included in the data as well as fields that describe when and where the event fell.
+The events data shows which events are included in the data as well as fields that describe when and where the event fell.
 
 #### Data Dictionary:
 
 - competition: the name of the competition
 - year: the year that the competition took place in the format: YYYY
 - month: the name of the month the competition took place
-- season: which skating season the event falls into in the foramt: Season YYYY/YY
+- season: which skating season the event falls into in the format: Season YYYY/YY
 - location: the name of the country where the event took place
 
 ## elements
@@ -49,7 +49,7 @@ Each element has a `baseValue` which is determined which element was attempted a
 
 | code  | description                       | adjustment       |
 | ----- | --------------------------------- | ---------------- |
-| COMBO | Jump Combination Downgrade        | baeValue - 20%   |
+| COMBO | Jump Combination Downgrade        | baseValue - 20%  |
 | SEQ   | Jump Sequence Downgrade           | baseValue - 20%  |
 | REP   | Repeated Jump                     | baseValue - 30%  |
 | \*    | Invalid Element                   | baseValue = 0.00 |
@@ -58,7 +58,7 @@ Each element has a `baseValue` which is determined which element was attempted a
 | x     | Credit for highlight distribution | baseValue + 10%  |
 | e     | Incorrect edge                    | baseValue - 20%  |
 | !     | Unclear edge                      | goe impact       |
-| q     | Jump lnded on quarter             | goe impact       |
+| q     | Jump landed on quarter            | goe impact       |
 | V     | Unclear flying entry              | goe impact       |
 
 The first three, `COMBO`, `SEQ`, and `REP` are all found in the element code, and the remaining are found in the notes column of the data. These can be used to determine if the `baseValue` in the elements data is correct by making the adjustment from the `baseValue` in the respective Jumps or Spins_Steps data. The notes either adjust the `baseValue` that would normally be awarded for the element, or have `goe` impact from the judges. The only other result is the downgraded jump (`<<`) note, which takes a jump element and subtracts 1 from its number. An example is a triple salchow (`3S`) with `<<` will be awarded the `baseValue` of a double salchow (`2S`).
@@ -74,7 +74,7 @@ This `baseValue` is then multiplied by the `goe` or grade of execution which is 
 - skate: if the element was in the Short Program (SP) or the Free Program (FP)
 - element: the code for the element
 - baseValue: the numerical base value awarded for the element (this plus the goe is to total score for the element)
-- goe: the numerical grade of exectution awarded to the element (this plus the baseValue is the total score for the element)
+- goe: the numerical grade of execution awarded to the element (this plus the baseValue is the total score for the element)
 - notes: any info flags that impact(ed) the base value or goe
 
 ## components
@@ -83,7 +83,7 @@ This `baseValue` is then multiplied by the `goe` or grade of execution which is 
 
 The components data looks at five aspects of a skaters performance and marks them on a scale of 1-10 with 10 being the best. This `baseValue` is then multiplied by the `factor` for the component score as different events and difference competitions have difference factors. The component will be one of `SkatingSkills`, `Transitions`, `Performance`, `Composition`, or `Interpretation`.
 
-In addition, there are three difference deductions that can be applied to a routine. These have the component name of `DeductionsFalls`, `DeductionsTime`, or `DeductionsLateStart`. The deductions works exactly the same as any other component, except that their `baseValue` is negative. For example, if a skater falls twice, then the `DeductionsFalls` value will be -1.00. All deductions have a multiplicatory `factor` of 1.00.
+In addition, there are three difference deductions that can be applied to a routine. These have the component name of `DeductionsFalls`, `DeductionsTime`, or `DeductionsLateStart`. The deductions works exactly the same as any other component, except that their `baseValue` is negative. For example, if a skater falls twice, then the `DeductionsFalls` value will be -1.00. All deductions have a multiplication `factor` of 1.00.
 
 #### Data Dictionary:
 
@@ -140,18 +140,22 @@ Each challenge is worth a different number of points (equal to the challenge num
 
 ## Challenge 1 - 1 Point
 
-The Components of a program are five elements that the judges rate the skaters on up to a maximum of 10. This means that the best component score a skater can achieve is 50.00. This component score is then reduced by any deductions that the skater incurs. Using this component score as a proxy for how well the judges felt the program went, without factoring in any of the specifc elements, **what is the top component score achieved by a skater?** To be able to compare across the Short Program (SP) and Free Program (FP) as well as between genders, ignore the `factor` column and simply use the `baseValue` as the raw component score. This answer should be a decimal number between 0.00 and 50.00 to 2 decimal places.
+The Components of a program are five elements that the judges rate the skaters on up to a maximum of 10. This means that the best component score a skater can achieve is 50.00. This component score is then reduced by any deductions that the skater incurs. Using this component score as a proxy for how well the judges felt the program went, without factoring in any of the specific elements, **what is the top component score achieved by a skater?** To be able to compare across the Short Program (SP) and Free Program (FP) as well as between genders, ignore the `factor` column and simply use the `baseValue` as the raw component score. This answer should be a decimal number between 0.00 and 50.00 to 2 decimal places.
 
 ## Challenge 2 - 2 Points
 
-Deductions can be found in the components of a program and are negative values that decrease the score a skater recieves. These are most often for falls but can also be for other infractions that are noted in the data dictionary above. **What is the most amount of deductions a skater has recieved in a single skate?** This answer should be an integer number greater than 0.
+Deductions can be found in the components of a program and are negative values that decrease the score a skater receives. These are most often for falls but can also be for other infractions that are noted in the data dictionary above. **What is the most amount of deductions a skater has received in a single skate?** This answer should be an integer number greater than 0.
 
 ## Challenge 3 - 3 Points
 
-In order to compete at the competitions in this dataset such as the World Champtionships and the Grand Prix Final, skaters have to qualify at other events and be invited. **Which event has the greatest number of skaters from a single nationality?** This answer should be a `year`, a `competition`, a `nationality`, and an integer for the number of skaters associated with that event.
+In order to compete at the competitions in this dataset such as the World Championships and the Grand Prix Final, skaters have to qualify at other events and be invited. **Which event has the greatest number of skaters from a single nationality?** This answer should be a `year`, a `competition`, a `nationality`, and an integer for the number of skaters associated with that event.
 
 ## Challenge 4 - 4 Points
 
 Each element has a different code that is recorded as explained above. **What is the most popular Jump element, and what is the most popular Spin element?** This answer should be the name of the element that can be found in the `Jumps` data and the `Spins_Steps` data respectively. For the purpose of this challenge, combination jumps are treated as their own jump instead of a combination of 2-3 individual jumps, as well as the level of the spin will be ignored (the trailing number).
 
 ## Challenge 5 - 5 Points
+
+To find out the results of a competition, the elements scores (the sum of the `baseValue` and the `goe`) are added to the component scores (the `baseValue` multiplied by the `factor`). These are then summed across both the Short Program (SP) and the Free Program (FP) for each skater in a competition. The medals are then awarded to the top three skaters with gold, silver, and bronze respectively. **In the recent 2022 Olympic Winter Games, who took the gold medal in the men's event, and who took the gold medal in the women's event, and what were each of their scores?** This answer should be two names, on of each of the gold medalists, and two scores, which are numbers to two decimal places.
+
+## Challenge 6 - 6 Points
