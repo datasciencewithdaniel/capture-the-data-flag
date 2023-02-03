@@ -1,5 +1,7 @@
 # Capture the Data Flag
 
+Capture the Data Flag is an initiative that seeks to build data and analytics skills through challenges to identify 'flags' in the data. The current dataset is hosted on AWS in a public S3 bucket and can be accessed and analysed in any way. The challenges are listed at the end of this README and increase in difficulty depending on how deep the 'flag' is hidden within the data. The [Getting_Started](getting_started.ipynb) notebook is in Python but that is simply a guide, if you can get to the flag using another method that you are more comfortable with (or less comfrtable with), go for it. Let the challenge begin!
+
 ## The Data
 
 The current dataset consists of data from international figure skating competitions. These have been split into the following individual files and can be downloaded at the relevant links:
