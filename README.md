@@ -7,8 +7,6 @@ Capture the Data Flag is an initiative that seeks to build data and analytics sk
 
 <h2 align="center">Let the challenge begin!</h2>
 
----
-
 ## The Data
 
 The current dataset consists of data from international figure skating competitions. These have been split into the following individual files and can be downloaded at the relevant links:
