@@ -5,7 +5,7 @@ Capture the Data Flag is an initiative that seeks to build data and analytics sk
 - [Jupyter Notebooks Guide](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
 - [Pandas Guide](https://pandas.pydata.org/docs/user_guide/index.html)
 
-<p style="text-align: center; font-size: x-large">Let the challenge begin!</p>
+<h2 style="align: center">Let the challenge begin!</h2>
 
 ---
 
