@@ -1,21 +1,28 @@
 # Capture the Data Flag
 
-Capture the Data Flag is an initiative that seeks to build data and analytics skills through challenges to identify 'flags' in the data. The current dataset is hosted on AWS in a public S3 bucket and can be accessed and analysed in any way. The challenges are listed at the end of this README and increase in difficulty depending on how deep the 'flag' is hidden within the data. The [Getting_Started](getting_started.ipynb) notebook is in Python but that is simply a guide, if you can get to the flag using another method that you are more comfortable with (or less comfrtable with), go for it. Let the challenge begin!
+Capture the Data Flag is an initiative that seeks to build data and analytics skills through challenges to identify 'flags' in the data. The current dataset is hosted on AWS in a public S3 bucket and can be accessed and analysed in any way. The challenges are listed at the end of this README and increase in difficulty depending on how deep the 'flag' is hidden within the data. The [Getting_Started](getting_started.ipynb) notebook is in Python but that is simply a guide, if you can get to the flag using another method that you are more comfortable with (or less comfortable with), go for it. The following are some guides to using Jupyter Notebooks and Pandas if required:
+
+- [Jupyter Notebooks Guide](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
+- [Pandas Guide](https://pandas.pydata.org/docs/user_guide/index.html)
+
+<p style="text-align: center; font-size: x-large">Let the challenge begin!</p>
+
+---
 
 ## The Data
 
 The current dataset consists of data from international figure skating competitions. These have been split into the following individual files and can be downloaded at the relevant links:
 
-- [skaters](https://capture-the-data-flag.s3.ap-southeast-2.amazonaws.com/Skaters.csv)
-- [events](https://capture-the-data-flag.s3.ap-southeast-2.amazonaws.com/Events.csv)
-- [elements](https://capture-the-data-flag.s3.ap-southeast-2.amazonaws.com/Elements.csv)
-- [components](https://capture-the-data-flag.s3.ap-southeast-2.amazonaws.com/Components.csv)
-- [jumps](https://capture-the-data-flag.s3.ap-southeast-2.amazonaws.com/Jumps.csv)
-- [spins_steps](https://capture-the-data-flag.s3.ap-southeast-2.amazonaws.com/Spins_Steps.csv)
+- [skaters](https://capture-the-data-flag.s3.ap-southeast-2.amazonaws.com/Skaters.csv) (Skaters.csv)
+- [events](https://capture-the-data-flag.s3.ap-southeast-2.amazonaws.com/Events.csv) (Events.csv)
+- [elements](https://capture-the-data-flag.s3.ap-southeast-2.amazonaws.com/Elements.csv) (Elements.csv)
+- [components](https://capture-the-data-flag.s3.ap-southeast-2.amazonaws.com/Components.csv) (Components.csv)
+- [jumps](https://capture-the-data-flag.s3.ap-southeast-2.amazonaws.com/Jumps.csv) (Jumps.csv)
+- [spins_steps](https://capture-the-data-flag.s3.ap-southeast-2.amazonaws.com/Spins_Steps.csv) (Spins_Steps.csv)
 
 ---
 
-## skaters
+## skaters (Skaters.csv)
 
 [DOWNLOAD LINK](https://capture-the-data-flag.s3.ap-southeast-2.amazonaws.com/Skaters.csv)
 
@@ -27,7 +34,7 @@ The skaters data is a list of every individual skater that is found in the data 
 - nationality: the 3-digit country code that the skater represents
 - gender: either M or W depending on which division the skater competes in
 
-## events
+## events (Events.csv)
 
 [DOWNLOAD LINK](https://capture-the-data-flag.s3.ap-southeast-2.amazonaws.com/Events.csv)
 
@@ -41,7 +48,7 @@ The events data shows which events are included in the data as well as fields th
 - season: which skating season the event falls into in the format: Season YYYY/YY
 - location: the name of the country where the event took place
 
-## elements
+## elements (Elements.csv)
 
 [DOWNLOAD LINK](https://capture-the-data-flag.s3.ap-southeast-2.amazonaws.com/Elements.csv)
 
@@ -79,7 +86,7 @@ This `baseValue` is then multiplied by the `goe` or grade of execution which is 
 - goe: the numerical grade of execution awarded to the element (this plus the baseValue is the total score for the element)
 - notes: any info flags that impact(ed) the base value or goe
 
-## components
+## components (Components.csv)
 
 [DOWNLOAD LINK](https://capture-the-data-flag.s3.ap-southeast-2.amazonaws.com/Components.csv)
 
@@ -98,7 +105,7 @@ In addition, there are three difference deductions that can be applied to a rout
 - baseValue: the numerical base value awarded for the component (this is multiplied by the factor for the total component score)
 - factor: the numerical scaling applied to the component (this is multiplied by the baseValue for the total component score)
 
-## jumps
+## jumps (Jumps.csv)
 
 [DOWNLOAD LINK](https://capture-the-data-flag.s3.ap-southeast-2.amazonaws.com/Jumps.csv)
 
@@ -110,7 +117,7 @@ The jumps data contains the code for every jump that is listed in the data, as w
 - element: the name for the jump element
 - baseValue: the base value awarded for the jump
 
-## spins_steps
+## spins_steps (Spins_Steps.csv)
 
 [DOWNLOAD LINK](https://capture-the-data-flag.s3.ap-southeast-2.amazonaws.com/Spins_Steps.csv)
 
@@ -136,7 +143,7 @@ The spins_steps data contains the code for each spin/step that is listed in the 
 
 ## The Challenges
 
-There are five challenges currently created for this capture-the-data-flag event. The [Getting_Started](getting_started.ipynb) python notebook has some initial code to install the relevant Python libraries and show how to access the data from the S3 bucket. This is not a restriction and is simply a support tool for those less familiar with data processing or Python.
+There are ten challenges currently created for this capture-the-data-flag event. The [Getting_Started](getting_started.ipynb) python notebook has some initial code to install the relevant Python libraries and show how to access the data from the S3 bucket. This is not a restriction and is simply a support tool for those less familiar with data processing or Python.
 
 Each challenge is worth a different number of points (equal to the challenge number), increasing throughout the challenges to reflect the increasing difficulty of the challenge.
 
@@ -186,3 +193,9 @@ What would happen if the women's competitions had the same component factors as 
 ## Challenge 10 - 10 Points
 
 Recall from Challenge 5 where we found the most popular jump and the most popular spin. In that challenge we treated a combination jump as its own individual jump, when in reality it is a composition of multiple jumps as specified above in the data dictionary. Repeat Challenge 5 where each individual jump within a combination jump is split out on its own to identify what is the true most popular jump (and spin but this result should not change.) **What is the most popular Jump element, and what is the most popular Spin element?** This answer should be the name of the element that can be found in the Jumps data and the Spins_Steps data respectively.
+
+---
+
+## Answers
+
+Once you have your answers, they can be submitted through a Google Form [HERE](https://docs.google.com/forms/d/e/1FAIpQLSdLkwBCziDuH3kpLic0bcbWJlDUy8vH_xCB21LSqm0g_HlvRQ/viewform?usp=sf_link). Ensure that the format of your answers matches what is outlined as expected in each of the challenges.
