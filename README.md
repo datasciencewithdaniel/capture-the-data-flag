@@ -18,8 +18,6 @@ The current dataset consists of data from international figure skating competiti
 - [jumps](https://capture-the-data-flag.s3.ap-southeast-2.amazonaws.com/Jumps.csv) (Jumps.csv)
 - [spins_steps](https://capture-the-data-flag.s3.ap-southeast-2.amazonaws.com/Spins_Steps.csv) (Spins_Steps.csv)
 
----
-
 ## skaters (Skaters.csv)
 
 [DOWNLOAD LINK](https://capture-the-data-flag.s3.ap-southeast-2.amazonaws.com/Skaters.csv)
